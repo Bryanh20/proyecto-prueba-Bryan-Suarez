@@ -1,0 +1,49 @@
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <meta charset="utf-8"/>
+            <title>Computadora VS Usuario</title>
+            <body>Piedra,papel y tijera</body>
+            <script>
+            function aleatorio(min,max){
+            return Math.floor(Math.random()*(max-min + 1)+ min)
+            }
+            let jugador = 0
+            let pc = aleatorio(1,2,3)
+            
+            jugador = prompt("Elije: 1-para piedra, 2-para papel, 3-para tijera")
+            //Escoger opcion:
+            if (jugador == 1){
+            alert("Elegiste piedra")
+            }else if (jugador == 2){
+            alert("Elegiste papel")
+            }else if(jugador == 3){
+            alert("Elegiste tijera")
+            }else{
+            alert("Escribe una opcion")
+            }
+            
+            if (pc == 1){
+            alert("La pc escogio piedra");
+            }else if (pc == 2){
+            alert("La pc escogio papel");
+            }else if(pc == 3){
+            alert("La pc escogio tijera");
+            }
+            
+            if (pc == jugador){
+            alert("Empate")
+            }else if(jugador == 1 && pc == 3 ){
+            alert("Ganaste")
+            }else if (jugador == 2 && pc == 1){
+            alert("Ganaste")
+            }else if(jugador == 3 && pc == 2 ){
+            alert("Ganaste");
+            }else {
+            alert("Perdiste");
+            }
+            </script>
+            </head>
+            </html>
+
+

@@ -1,0 +1,25 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>Convertidor de Dólares a Córdobas</title>
+        </head>
+        <body>
+        <h2>Convertidor de Dólares a Córdobas</h2>
+
+        <script>
+        function convertir() {
+        const cordoba = 36.50;
+        const cantidadDolares = parseFloat(prompt("Escriba la cantidad en dólares:"));
+        if (cantidadDolares) {
+        const cantidadCordobas = cantidadDolares * cordoba;
+        alert(cantidadDolares + ' dólares equivalen a ' + cantidadCordobas + ' córdobas.');
+        } else {
+        alert('Escribe una cantidad a convertir');
+            }
+        }
+
+        convertir();
+        </script>
+        </body>
+        </html>
